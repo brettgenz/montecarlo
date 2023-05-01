@@ -22,29 +22,29 @@ from montecarlo import Analyzer<br>
 *Specify the number and name of faces to be use on the die.*<br>
 faces = [1, 2, 3, 4, 5, 6]  
 
-*Create an instance of a Die.<br>
+*Create an instance of a Die.*<br>
 my_die = Die(faces)         
 
 
 #### Creating a Game Object
 
-*Create a game with a list of 4 of my_die objects.<br>
+*Create a game with a list of 4 of my_die objects.*<br>
 my_game = Game([my_die, my_die, my_die, my_die])  
 
-*Roll all 4 dice 1000 times each.<br>
+*Roll all 4 dice 1000 times each.*<br>
 my_game.play(1000)     
 
 
 #### Creating an Analyzer Object
 
-*Create an Analyzer object.<br>
+*Create an Analyzer object.*<br>
 my_analyzer = Analyzer(my_game)
 
-*Compute how many times all dice rolled identical faces. This method stores the results as a dataframe in a public attribute.<br>
+*Compute how many times all dice rolled identical faces. This method stores the results as a dataframe in a public attribute.*<br>
 my_analyzer.jackpot()   
 
-*Compute the distinct combinations of faces along with their counts. This method stores the results as a dataframe in a public attribute.<br>
+*Compute the distinct combinations of faces along with their counts. This method stores the results as a dataframe in a public attribute.*<br>
 my_analyzer.combo()    
 
-*Compute how many times a given face is rolled in each event. This method stores the results as a dataframe in a public attribute.<br>
+*Compute how many times a given face is rolled in each event. This method stores the results as a dataframe in a public attribute.*<br>
 my_analyzer.face_counts_per_roll()  

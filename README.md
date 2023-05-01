@@ -8,7 +8,7 @@ This module contains a Monte Carlo simulator consisting of three classes: <br>
 
 #### Installing the Module
 
-*To install the module, at the command line or in a Jupyter notebook use the command:<br>
+*To install the module, at the command line or in a Jupyter notebook use the command:*<br>
 !pip install -e .
 
 #### Import Classes
@@ -19,32 +19,32 @@ from montecarlo import Analyzer<br>
 
 #### Creating a Die Object
 
-*Specify the number and name of faces to be use on the die.
+*Specify the number and name of faces to be use on the die.*<br>
 faces = [1, 2, 3, 4, 5, 6]  
 
-*Create an instance of a Die.
+*Create an instance of a Die.<br>
 my_die = Die(faces)         
 
 
 #### Creating a Game Object
 
-*Create a game with a list of 4 of my_die objects.
+*Create a game with a list of 4 of my_die objects.<br>
 my_game = Game([my_die, my_die, my_die, my_die])  
 
-*Roll all 4 dice 1000 times each.
+*Roll all 4 dice 1000 times each.<br>
 my_game.play(1000)     
 
 
 #### Creating an Analyzer Object
 
-*Create an Analyzer object.
+*Create an Analyzer object.<br>
 my_analyzer = Analyzer(my_game)
 
-*Compute how many times all dice rolled identical faces. This method stores the results as a dataframe in a public attribute.
+*Compute how many times all dice rolled identical faces. This method stores the results as a dataframe in a public attribute.<br>
 my_analyzer.jackpot()   
 
-*Compute the distinct combinations of faces along with their counts. This method stores the results as a dataframe in a public attribute.
+*Compute the distinct combinations of faces along with their counts. This method stores the results as a dataframe in a public attribute.<br>
 my_analyzer.combo()    
 
-*Compute how many times a given face is rolled in each event. This method stores the results as a dataframe in a public attribute.
+*Compute how many times a given face is rolled in each event. This method stores the results as a dataframe in a public attribute.<br>
 my_analyzer.face_counts_per_roll()  

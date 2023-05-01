@@ -1,4 +1,4 @@
-Author: Brett Genz
+Author: Brett Genz<br>
 Project: Monte Carlo Simulator
 
 This module contains a Monte Carlo simulator consisting of three classes: <br>
@@ -8,38 +8,43 @@ This module contains a Monte Carlo simulator consisting of three classes: <br>
 
 === Installing the Module ===
 
-To install the module, at the command line or in a Jupyter notebook use the command:
+To install the module, at the command line or in a Jupyter notebook use the command:<br>
 !pip install -e .
 
 === Import Classes === 
 
-from montecarlo import Die
-from montecarlo import Game
-from montecarlo import Analyzer
+from montecarlo import Die<br>
+from montecarlo import Game<br>
+from montecarlo import Analyzer<br>
 
 === Creating a Die Object ===
 
-faces = [1, 2, 3, 4, 5, 6]  # Specify the number and name of faces to be use on the die.
+# Specify the number and name of faces to be use on the die.
+faces = [1, 2, 3, 4, 5, 6]  
 
-my_die = Die(faces)         # Create an instance of a Die.
+# Create an instance of a Die.
+my_die = Die(faces)         
 
 
 === Creating a Game Object ===
 
-my_game = Game([my_die, my_die, my_die, my_die])  # Create a game with a list of 4 of my_die objects.
+# Create a game with a list of 4 of my_die objects.
+my_game = Game([my_die, my_die, my_die, my_die])  
 
-my_game.play(1000)     # Roll all 4 dice 1000 times each.
+# Roll all 4 dice 1000 times each.
+my_game.play(1000)     
 
 
 === Creating an Analyzer Object ===
 
-my_analyzer = Analyzer(my_game)  # Create an Analyzer object.
+# Create an Analyzer object.
+my_analyzer = Analyzer(my_game)
 
-my_analyzer.jackpot()  # Compute how many times all dice rolled identical faces. This method stores the results as 
-                       # a dataframe in a public attribute.
+# Compute how many times all dice rolled identical faces. This method stores the results as a dataframe in a public attribute.
+my_analyzer.jackpot()   
 
-my_analyzer.combo()    # Compute the distinct combinations of faces along with their counts. This method stores the 
-                       # results as a dataframe in a public attribute.
-                       
-my_analyzer.face_counts_per_roll()  # Compute how many times a given face is rolled in each event. This method
-                                    # stores the results as a dataframe in a public attribute.
+# Compute the distinct combinations of faces along with their counts. This method stores the results as a dataframe in a public attribute.
+my_analyzer.combo()    
+
+# Compute how many times a given face is rolled in each event. This method stores the results as a dataframe in a public attribute.
+my_analyzer.face_counts_per_roll()  

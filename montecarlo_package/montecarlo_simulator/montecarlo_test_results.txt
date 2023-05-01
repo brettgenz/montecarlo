@@ -1,0 +1,23 @@
+test_1_create_die (__main__.MonteCarloTestSuite)
+This method tests that an instance has been created and includes the correct number of faces. ... ok
+test_2_change_weights (__main__.MonteCarloTestSuite)
+This method tests whether or not the change_weight() method correctly updated the weight of the specified face. ... ok
+test_3_roll_die (__main__.MonteCarloTestSuite)
+This method tests whether or not the roll_die() method returns the correct number of rolls. ... ok
+test_4_show_die (__main__.MonteCarloTestSuite)
+This method tests whether or not the private data frame self.die_df has the correct dimensions. ... ok
+test_5_play (__main__.MonteCarloTestSuite)
+This method tests whether the play method creates a last_play data frame ... ok
+test_6_show_last_play (__main__.MonteCarloTestSuite)
+This method tests whether the show_last_play() method with the default parameter ... ok
+test_7_jackpot (__main__.MonteCarloTestSuite)
+This method tests whether the jackpot() method correctly counts the number of jackpots ... ok
+test_8_combo (__main__.MonteCarloTestSuite)
+This method tests whether the combo() method correctly groups and counts matches ... ok
+test_9_face_counts_per_roll (__main__.MonteCarloTestSuite)
+This method tests whether the face_counts data frame has the correct shape given ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.040s
+
+OK

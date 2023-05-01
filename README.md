@@ -1,7 +1,7 @@
 Author: Brett Genz
 Project: Monte Carlo Simulator
 
-This module contains a Monte Carlo simulator consisting of three classes: 
+This module contains a Monte Carlo simulator consisting of three classes: <br>
 - a Die class for creating dice with parameters for specifying faces and weights
 - a Game class which rolls the dice a specified number of times 
 - an Analyzer class which takes the results of a single game and computes various statistical properties about it.
